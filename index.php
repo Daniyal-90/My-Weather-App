@@ -26,7 +26,7 @@
             <form method="POST">
                 <label for="location">Enter City Or Zip Code:</label><br><br>
                 <input type="text" id="location" name="location" required placeholder="e.g., london">
-                <button type="submit" name="get_weather">Get Weather</button>
+                <button type="submit" name="get_weather">Get Weather App</button>
             </form>
             <div class="weather-info">
                 <?php
@@ -41,7 +41,7 @@
                             echo "<p>Temperature: {$weatherArray['current']['temp_c']} °C</p>";
                             echo "<p>Condition: {$weatherArray['current']['condition']['text']}</p>";
                         } else echo "<p class='error'>Location not found. Please try again.</p>";
-                    } else echo "<p class='error'>Unable to fetch weather data. Please check your sdadad input or try again later.</p>";
+                    } else echo "<p class='error'>Unable to fetch weather data. Please check your input or try again later.</p>";
                 }
                 ?>
             </div>
